@@ -1,6 +1,6 @@
 'use strict';
 
-function distinct(dataset) {
+const distinct = (dataset) => {
   const keys = new Set();
   return dataset.filter(record => {
     const cols = Object.keys(record).sort();
@@ -9,9 +9,11 @@ function distinct(dataset) {
     keys.add(key);
     return !has;
   });
-}
+};
 
-let flights = [
+// Usage
+
+const flights = [
   { from: 'Kiev', to: 'Rome' },
   { from: 'Kiev', to: 'Warsaw' },
   { from: 'Dublin', to: 'Riga' },
@@ -22,6 +24,6 @@ let flights = [
 
 console.dir({ flights });
 
-flights = distinct(flights);
+const directions = distinct(flights);
 
-console.dir({ flights });
+console.dir({ directions });
