@@ -6,7 +6,7 @@ const distinct = (dataset) => {
     const cols = Object.keys(record).sort();
     const key = cols.map(field => record[field]).join('\x00');
     const has = keys.has(key);
-    keys.add(key);
+    if (!has) keys.add(key);
     return !has;
   });
 };
