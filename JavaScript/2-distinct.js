@@ -1,6 +1,6 @@
 'use strict';
 
-const distinct = (dataset) => {
+const distinct = dataset => {
   const keys = new Set();
   return dataset.filter(record => {
     const cols = Object.keys(record).sort();
