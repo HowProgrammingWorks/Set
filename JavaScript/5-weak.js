@@ -4,7 +4,7 @@ const cities = new Set([
   { name: 'Beijing' },
   { name: 'Kiev' },
   { name: 'London' },
-  { name: 'Baghdad' }
+  { name: 'Baghdad' },
 ]);
 
 const list = new WeakSet();

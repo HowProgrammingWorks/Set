@@ -19,7 +19,7 @@ const flights = [
   { from: 'Dublin', to: 'Riga' },
   { from: 'Riga', to: 'Dublin' },
   { from: 'Kiev', to: 'Rome' },
-  { from: 'Cairo', to: 'Paris' }
+  { from: 'Cairo', to: 'Paris' },
 ];
 
 console.dir({ flights });
