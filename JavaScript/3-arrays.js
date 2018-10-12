@@ -2,9 +2,8 @@
 
 const union = (s1, s2) => {
   const ds = s1.slice(0);
-  let i, item;
-  for (i = 0; i < s2.length; i++) {
-    item = s2[i];
+  for (let i = 0; i < s2.length; i++) {
+    const item = s2[i];
     if (!ds.includes(item)) ds.push(item);
   }
   return ds;
@@ -12,9 +11,8 @@ const union = (s1, s2) => {
 
 const intersection = (s1, s2) => {
   const ds = [];
-  let i, item;
-  for (i = 0; i < s1.length; i++) {
-    item = s1[i];
+  for (let i = 0; i < s1.length; i++) {
+    const item = s1[i];
     if (s2.includes(item)) ds.push(item);
   }
   return ds;
@@ -22,9 +20,8 @@ const intersection = (s1, s2) => {
 
 const difference = (s1, s2) => {
   const ds = [];
-  let i, item;
-  for (i = 0; i < s1.length; i++) {
-    item = s1[i];
+  for (let i = 0; i < s1.length; i++) {
+    const item = s1[i];
     if (!s2.includes(item)) ds.push(item);
   }
   return ds;
