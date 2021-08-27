@@ -36,7 +36,7 @@ const cities2 = ['Kiev', 'London', 'Baghdad'];
 
 const operations = [union, intersection, difference, complement];
 
-const results = operations.map(operation => ({
+const results = operations.map((operation) => ({
   [operation.name]: operation(cities1, cities2)
 }));
 

@@ -4,7 +4,7 @@ const cities = new Set();
 
 cities.add('Beijing');
 
-['Kiev', 'London', 'Baghdad'].forEach(city => cities.add(city));
+['Kiev', 'London', 'Baghdad'].forEach((city) => cities.add(city));
 
 cities.delete('Baghdad');
 

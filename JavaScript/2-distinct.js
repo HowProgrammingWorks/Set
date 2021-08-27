@@ -1,10 +1,10 @@
 'use strict';
 
-const distinct = dataset => {
+const distinct = (dataset) => {
   const keys = new Set();
-  return dataset.filter(record => {
+  return dataset.filter((record) => {
     const cols = Object.keys(record).sort();
-    const key = cols.map(field => record[field]).join('\x00');
+    const key = cols.map((field) => record[field]).join('\x00');
     const has = keys.has(key);
     if (!has) keys.add(key);
     return !has;
